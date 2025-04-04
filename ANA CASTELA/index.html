@@ -16,6 +16,9 @@
             font-family: Arial, sans-serif;
             text-align: center;
         }
+        h2 {
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+        }
         .button {
             display: inline-block;
             padding: 20px 40px;
@@ -27,14 +30,25 @@
             text-decoration: none;
             border-radius: 5px;
             margin-top: 20px;
+            animation: pulse 1.5s infinite;
         }
         .button:hover {
             background-color: darkred;
         }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
     </style>
+    <script>
+        setTimeout(function() {
+            window.location.href = "https://biolink.website/ana-castela";
+        }, 5000); // Redireciona em 5 segundos
+    </script>
 </head>
 <body>
-    <h2>Você está quase lá, clique para ver os videos😈</h2>
+    <h2>Você está quase lá, clique para ver os vídeos 😈</h2>
     <a href="https://biolink.website/ana-castela" class="button">Clique aqui</a>
 </body>
 </html>
